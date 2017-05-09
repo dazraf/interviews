@@ -11,10 +11,16 @@ import java.nio.file.Paths;
 
 class RandomFileGenerator {
   private static  File root = new File("./data");
+  private final String fileName;
+  private final int lines;
 
-  void writeRandomFile(String fileName, int lines) throws IOException {
-    // root.mkdirs();
-    Path fullPath = Paths.get("./data", fileName);
+  RandomFileGenerator(String fileName, int lineCount) {
+    this.fileName = fileName;
+    this.lines = lineCount;
+  }
+
+  void generate() throws IOException {
+    Path fullPath = new File(root, fileName).toPath();
 
     RandomNameGenerator rng = new RandomNameGenerator(0);
 

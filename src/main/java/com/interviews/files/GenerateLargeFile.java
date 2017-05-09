@@ -7,6 +7,6 @@ import java.io.IOException;
  */
 public class GenerateLargeFile {
   public static void main(String [] args) throws IOException {
-    new RandomFileGenerator().writeRandomFile("large.txt", 10_000_000);
+    new RandomFileGenerator("large.txt", 10_000_000).generate();
   }
 }

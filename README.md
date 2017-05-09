@@ -20,8 +20,8 @@ The more you complete the better.
 
 ## Exercises
 
-1. In `RandomFileGeneratorTest` implement one positive test
-2. Refactor `RandomFileGenerator` to take an additional parameter for the root path of the file
+1. In `RandomFileGeneratorTest` implement one positive test.
+2. Refactor `RandomFileGenerator` to take an additional parameter for the root path of the file.
 3. Run `GenerateSmallFile` class.
 3. Implement `SortSmallFile` class.
 4. Can it be made more memory efficient? How?
